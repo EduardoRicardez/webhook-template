@@ -7,7 +7,7 @@ app.post('/dialogflow', express.json(), (req, res) => {
   const agent = new WebhookClient({ request: req, response: res })
 
   function welcome () {
-    agent.add('Welcome to my agent!')
+    agent.add('Welcome!')
   }
 
   let intentMap = new Map()
