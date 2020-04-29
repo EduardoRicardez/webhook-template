@@ -11,17 +11,20 @@
     "dev": "nodemon --inspect src/server.js",
     "start": "node src/server.js",
     "tunnel": "ngrok http 8080",
-    "auth-ngrok":"ngrok authtoken 1YRpgNjpQZXhNll2irY1vtHbRKP_48c37bDXk8AR1iv8tYb5C",
+    "auth-ngrok": "ngrok authtoken 1YRpgNjpQZXhNll2irY1vtHbRKP_48c37bDXk8AR1iv8tYb5C",
     "lint": "standard src/**/*.js",
-    "deploy-cf": "firebase deploy --only functions",
-    "deploy-ae": "gcloud app deploy"
+    "fix": "standard --fix",
+    "deploy-cf": "firebase deploy --only functions"
   },
   "dependencies": {
     "actions-on-google": "^2.12.0",
     "dialogflow-fulfillment": "^0.5.0",
     "express": "^4.17.1",
     "firebase-admin": "^8.9.2",
-    "firebase-functions": "^3.3.0"
+    "firebase-functions": "^3.3.0",
+    "googleapis": "^47.0.0",
+    "intl": "^1.2.5",
+    "moment": "^2.24.0"
   },
   "devDependencies": {
     "ngrok": "^3.1.0",
